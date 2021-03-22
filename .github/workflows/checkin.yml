@@ -30,8 +30,6 @@ jobs:
         python -m pip install requests
     - name: 'wps invite'
       run: python main.py _wps_invite
-    - name: 'youdao_checkin'
-      run: python note163.py ${{secrets.YOUDAO_USER}} ${{secrets.YOUDAO_PASSWD}}
-        
-        
-        
+#     - name: 'youdao_checkin'
+#       run: python note163.py ${{secrets.YOUDAO_USER}} ${{secrets.YOUDAO_PASSWD}}
+      
