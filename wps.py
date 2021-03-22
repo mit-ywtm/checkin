@@ -15,7 +15,7 @@ get url
 def docer_checkin(sid: str):
     # 先检查今天是否签到过
     base_info_url = "https://zt.wps.cn/2019/docer_sign_ppt/api/base_info"
-    sid = 'V02S8fWiw86zsFg1oE5p4hCHAR6GPE000a4e69e2002508b828'
+    sid = 'V02SSPKKc7sCSOvFcHD3IlXdcD0JkzE00a70f722000cf62834'
     WxCode = '011Jq1jn1G3NMo0oisjn1i3ojn1Jq1jQ'
     s = requests.session()
     r = s.get(base_info_url, headers={'sid': sid})
@@ -39,6 +39,9 @@ def wps_invite(sid: list, invite_userid: int) -> None:
     default_sid = [
         "V02StVuaNcoKrZ3BuvJQ1FcFS_xnG2k00af250d4002664c02f",
         "V02SWIvKWYijG6Rggo4m0xvDKj1m7ew00a8e26d3002508b828",
+        'V02S2UBSfNlvEprMOn70qP3jHPDqiZU00a7ef4a800341c7c3b',
+        'V02ScVbtm2pQD49ArcgGLv360iqQFLs014c8062e000b6c37b6',
+        'V02SfEpW1yy4wUUh_eEnEHpiJJuoDnE00ae12710000179aa7f',
         "V02Sr3nJ9IicoHWfeyQLiXgvrRpje6E00a240b890023270f97",
         "V02SBsNOf4sJZNFo4jOHdgHg7-2Tn1s00a338776000b669579",
         "V02S2oI49T-Jp0_zJKZ5U38dIUSIl8Q00aa679530026780e96",
