@@ -30,8 +30,12 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         python -m pip install requests
+    - name: 'wps checkin'
+      run: python main.py _wps_checkin
     - name: 'wps invite'
       run: python main.py _wps_invite
+    - name: 'wps docer'
+      run: python main.py _docer_checkin
 #     - name: 'youdao_checkin'
 #       run: python note163.py ${{secrets.YOUDAO_USER}} ${{secrets.YOUDAO_PASSWD}}
       
